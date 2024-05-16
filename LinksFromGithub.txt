@@ -1,0 +1,3 @@
+https://github.com/sandrinodimattia/code-samples/tree/master/cypress-auth0-example----------- for authentication reasons
+http://docs.learnandshine.in/cypress/handson/ --------------- Class room training links provided by Mahendra
+https://gorest.co.in/        ------ test/dummy WEB portal for API testing enabling
