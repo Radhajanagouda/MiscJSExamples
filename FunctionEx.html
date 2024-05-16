@@ -1,0 +1,44 @@
+<html>
+<body>
+
+
+<p id = "demo"></p>
+<script>
+	function Person(first,last,age,eye,language){
+		this.firstName  =first;
+		this.lastName = last;
+		this.eye = eye;
+		this.age = age,
+		this.language = language,
+		get lang(){
+			return this.language;
+		},
+
+		set lang(lang){
+			this.language = lang;
+		}
+	
+	}
+
+	const person1 = new Person("Shree","laxmi","18","brown");
+	console.log(person1);
+	
+
+	Person.prototype.nationality ="Indian";
+	Person.prototype.fullName=function(){
+		console.log("this function of fullname is called");
+	}
+	console.log(person1.nationality);
+	console.log(person1.fullName());
+
+
+	let txt="";
+	for(let x in person1){
+		txt += person1[x]+" "; //this is way to access properties on runtime 
+	}
+
+	document.getElementById("demo").innerHTML=txt;
+
+</script>
+</body>
+</html>

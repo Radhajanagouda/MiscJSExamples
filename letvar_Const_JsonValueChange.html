@@ -1,0 +1,53 @@
+<html>
+<body>
+<script>
+let number=50;
+function print(){
+	let square=number*number;
+	if (number<60){
+		var largerNumber = 80;
+		let anotherLargerNumber = 100;
+		// console.log(square);
+	}
+	const somevariabele=20;
+	console.log(somevariabele);
+	
+	// somevariabele = 50;
+	// console.log(somevariabele);  
+	
+}
+
+print();
+</script>
+
+<p id = "demo"></p>
+<script>
+	const person={
+		firstname:"radha",
+		lastname: "jana",
+		age:20,
+		eyecolor:"black",
+		language :"kannada",
+		fullname:function(){
+			return this.firstname+""+this.lastname;
+		},
+		get lang(){
+			return this.language;
+		},
+		set lang(lang){
+			this.language = lang;
+		}
+
+	};
+	document.getElementById("demo").innerHTML=person.firstname + "" +person.lastname;
+	// person.firstname = "tom";
+	// document.getElementById("demo").innerHTML=person.firstname + "" +person.lastname;
+	console.log(person.fullname())
+	console.log(person.lang);
+
+	person.lang = "english";
+	console.log(person.lang);
+
+</script>
+</body>
+</html>

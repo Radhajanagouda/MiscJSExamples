@@ -1,0 +1,26 @@
+<html>
+<body>
+
+
+<p id = "demo"></p>
+<script>
+	class ClassWithGetSet{
+		msg="Hello world";
+		get msg1(){
+			return this.msg;
+		}
+		set msg1(x){
+			this.msg=`hello ${x}`;// this can also be written as hello + x, here $ the dynamic value of printing x values
+		}
+	}
+
+	const instance = new ClassWithGetSet();
+	console.log(instance.msg1)
+
+	instance.msg1 = "cake";
+	console.log(instance.msg1);
+	document.getElementById("demo").innerHTML=instance.msg1;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+let number=50;
+function print(){
+	let square=number*number;
+	if (number<60){
+		var largerNumber = 80;
+		let anotherLargerNumber = 100;
+		console.log(square);
+	}
+	console.log(largerNumber);//once largerNumber is defined, it can be accessed anywhere from here.
+	// console.log(anotherLargerNumber); //this will not work, as it is let type, its outside the block.
+	number =30;
+	console.log(number);
+	// let number=40;    //this will error as we cant do let for same variable again.
+	var largerNumber=90;
+	console.log(largerNumber);
+}
+
+print();
+</script>
+</body>
+</html>
